@@ -1,0 +1,390 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins' sans-serif;
+    box-sizing: border-box;
+}
+body{
+    color:  rgb(60, 5, 5);
+    
+}
+  
+.logo h3{
+    position: relative;
+    display: inline;
+    padding: 20px 10px;
+    color: rgb(132, 0, 32);
+    font-family: "Mea Culpa", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(first.png);
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    padding: 10px 10%;
+}
+nav ul li{
+    display: inline-block;
+    text-align: center;
+    margin: 10px 50px;
+    list-style: none;
+    font-size: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color:  rgb(60, 5, 5);
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: rgb(128, 0, 32);
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.headertext{
+    position: absolute;
+    margin:80px 80px ;
+    font-size: 30px;
+  
+}
+.headertext h1{
+    font-size: 60px;
+    margin-top: 10px;
+}
+.headertext h1 span{
+    color: rgb(132, 0, 32);
+}
+.headertext p{
+    margin: 10px;
+    font-family:  "Martel", serif;
+    font-size: 20px;
+    font-weight: 200;
+    font-style: normal;
+}
+.btn{
+    display: block;
+    margin: 50px;
+    width: fit-content;
+    border: 1px solid  rgb(60, 5, 5);
+    text-decoration: none;
+    padding: 14px 50px;
+    border-radius: 6px;
+    color:rgb(60, 5, 5) ;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background:  rgb(180, 22, 61);
+}
+.about{
+    width: 100%;
+    height: 100vh;
+    background-image: url(second.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.about h1{
+    color:  rgb(60, 5, 5);
+    text-align: center;
+    padding: 20px;
+    font-size: 50px;
+}
+.para{
+    text-align: center;
+    font-size: 25px;
+    font-family: "GFS Didot", serif;
+    color: rgb(132, 0, 32); 
+}
+.tabtitles{
+    display: flex;
+    margin:20px 0 40px ;
+    margin: 100px 190px;
+    gap: 100px;
+}
+.tablinks{
+    margin-right: 150px;
+    font-size: 28px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    color:  rgb(60, 5, 5); 
+}
+.tablinks::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: rgb(128, 0, 32);
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    transition: 0.5s;
+
+}
+.tablinks:hover::after{
+    width: 100%;
+}
+.tabcontents{
+    margin-left: 150px;
+    margin-top: -60px;
+    font-size: 20px;
+}
+.tabcontents ul li{
+    margin: 30px 0;
+}
+
+.tabcontents ul li span{
+    font-size: 14px;
+    color: rgb(128, 0, 32);
+}
+
+.tabcontent2{
+    margin-left: 500px;
+    margin-top: -228px;
+    font-size: 20px;
+
+}
+.tabcontent2 ul li{
+    margin: 30px 0;
+}
+.tabcontent2 ul li span{
+    font-size: 14px;
+    color: rgb(128, 0, 32);
+}
+.bottom{
+    position:relative;
+    margin-top: 90px;
+    margin-left: 100px;
+    padding: 20px;
+}
+.bottom img{
+    padding: 20px;
+}
+.Proficiency{
+    width: 100%;
+    height: 100vh;
+    background-image: url(10th.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+.Proficiency h1{
+    color:  rgb(60, 5, 5);
+    text-align: center;
+    padding: 20px;
+    font-size: 50px;
+
+}
+.servicelist{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 90px;
+}
+.servicelist div{
+    background: rgb(198, 176, 176);
+    padding: 150px;
+    font-size: 13px;
+    font-weight: 300;
+    transition: background 0.5s, transform 0.5s;
+
+}
+.servicelist div i{
+    font-size: 50px;
+    margin-left: -70px;
+    margin-top: -100px;
+    margin-bottom: 30px;
+}
+.servicelist div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: -80px;
+    margin-bottom: 15px;
+    font-family: "GFS Didot", serif;
+        
+}
+.servicelist div:hover{
+    background: rgb(188, 42, 78); 
+    transform:translateY(-10px) ;
+}
+.frontend::after{
+        content: '60%';
+        width: 0;
+        height: 10px;
+        background-color:rgb(60, 5, 5);
+
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        font-size: 40px;
+        color: black;
+        
+}
+.frontend:hover::after{
+    width: 80%;
+}
+.backend::after{
+    content: '30%';
+    width: 0;
+    height: 10px;
+    background-color: rgb(60, 5, 5);
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    font-size: 40px;
+    color: black;
+    
+}
+.backend:hover::after{
+width: 30%;
+}
+.prog::after{
+    content: '80%';
+    width: 0;
+    height: 10px;
+    background-color: rgb(60, 5, 5);
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    font-size: 40px;
+    color: black;
+    
+}
+.prog:hover::after{
+width: 70%;
+}
+.workweb{
+    width: 100%;
+    height: 100vh;
+    background-image: url(11th.jpg);
+    background-size: cover;
+    background-position: center;
+
+
+}
+.workweb h1{
+    color:  rgb(60, 5, 5);
+    text-align: center;
+    padding: 30px;
+    font-size: 50px;
+
+}
+.worklist{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 90px;
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgb(133,17,17) );
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    color: bisque;
+    transition: height 0.5s;
+}
+.layer h2{
+    font-weight: 400;
+    margin-bottom: 20px;
+    
+}
+.layer a{
+    margin-top: 20px;
+    color: rgb(133,17,17);
+    text-decoration: none;
+    font-size: 18px;
+    background: bisque;
+    line-height: 40px;
+    width: 15%;
+    height: 10%;
+    border-radius: 50%;
+    text-align: center;
+
+}
+.work:hover img{ 
+    transform: scale(1.1);
+
+}
+.work:hover .layer{
+    height: 100%;
+}
+.contact{
+    width: 100%;
+    height: 60vh;
+    background-image: url(12.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+.contact h1{
+    color:  rgb(60, 5, 5);
+    padding: 30px;
+    font-size: 50px;
+
+}
+.contact p{
+    margin-left: 40px;
+    font-size: 24px;
+    margin-top: -15px;
+    font-family: "Akaya Telivigala", system-ui;
+    color: rgb(132, 0, 32) ;
+}
+.contact h2{
+    margin: 30px;
+    font-weight: 200;
+    font-size: 20px;
+}
+.links{
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.links a{
+    margin: 20px;
+    margin-top: 20px;
+    color: rgb(133,17,17);
+    text-decoration: none;
+    font-size: 50px;
+    line-height: 40px;
+    width: 15%;
+    height: 10%;
+    text-align: center;
+
+}
+.contact img{
+    margin-left: 900px;
+    margin-top: -390px;
+    margin-right: 50px;
+    border-radius: 50%;
+}
